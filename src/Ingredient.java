@@ -1,5 +1,5 @@
 public class Ingredient {
-    private int amount;
+    private double amount;
     private String unit;
     private String name;
 
@@ -13,14 +13,14 @@ public class Ingredient {
      * @param unit the unit of measurement for the ingredient
      * @param name the name of the ingredient
      */
-    public Ingredient(int amount, String unit, String name) {
+    public Ingredient(double amount, String unit, String name) {
         this.amount = amount;
         this.unit = unit;
         this.name = name;
     }
 
     // Getters
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
@@ -33,15 +33,21 @@ public class Ingredient {
     }
 
     //Setters
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setAmount(float amount) {
+        if (amount > 0) {
+            this.amount = amount;
+        }
     }
 
     public void setUnit(String unit) {
-        this.unit = unit;
+        if (unit != null && !unit.isEmpty()) {
+            this.unit = unit;
+        }
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null && !name.isEmpty()) {
+            this.name = name;
+        }
     }
 }

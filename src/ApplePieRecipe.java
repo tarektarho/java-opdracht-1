@@ -6,7 +6,7 @@ public class ApplePieRecipe {
     Ingredient egg = new Ingredient(1, "stuk(s)", "ei");
     Ingredient vanillaSugar = new Ingredient(8, "gram", "vanillesuiker");
     Ingredient salt = new Ingredient(1, "snuf", "zout");
-    Ingredient apples = new Ingredient(1500, "gram", "zoetzure appels");
+    Ingredient apples = new Ingredient(1.5, "kilo", "zoetzure appels");
     Ingredient crystalSugar = new Ingredient(75, "gram", "kristal suiker");
     Ingredient cinnamon = new Ingredient(3, "theelepels", "kaneel");
     Ingredient breadcrumbs = new Ingredient(15, "gram", "paneermeel");
